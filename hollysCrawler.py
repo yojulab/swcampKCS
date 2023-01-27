@@ -26,7 +26,7 @@ def hollys_store(result):
 #[CODE 0]
 def main():
     result = []
-    print('Hollys store crawling >>>>>>>>>>>>>>>>>>>>>>>>>>')
+    print('Hollys Coffee store crawling >>>>>>>>>>>>>>>>>>>>>>>>>>')
     hollys_store(result)   #[CODE 1] 호출 
     hollys_tbl = pd.DataFrame(result, columns=('store', 'sido-gu', 'address','phone'))
     hollys_tbl.to_csv('./data/hollys.csv', encoding='cp949', mode='w', index=True)
