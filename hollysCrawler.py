@@ -29,7 +29,7 @@ def main():
     print('Hollys store crawling >>>>>>>>>>>>>>>>>>>>>>>>>>')
     hollys_store(result)   #[CODE 1] 호출 
     hollys_tbl = pd.DataFrame(result, columns=('store', 'sido-gu', 'address','phone'))
-    hollys_tbl.to_csv('./6장_data/hollys.csv', encoding='cp949', mode='w', index=True)
+    hollys_tbl.to_csv('./data/hollys.csv', encoding='cp949', mode='w', index=True)
     del result[:]
        
 if __name__ == '__main__':
